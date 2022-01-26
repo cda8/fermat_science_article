@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity(name="articles")
 @Table(name = "articles")
-public class ArticleEntitie {
+public class ArticleEntity {
 
 
 	@Id
@@ -24,9 +24,9 @@ public class ArticleEntitie {
 	private boolean visibiliteArticle;
 
 	//Constructor
-	public ArticleEntitie() {}
+	public ArticleEntity() {}
 
-	public ArticleEntitie(String titreArticle, Date dateArticle, int positionArticle, boolean visibiliteArticle) {
+	public ArticleEntity(String titreArticle, Date dateArticle, int positionArticle, boolean visibiliteArticle) {
 		this.titreArticle = titreArticle;
 		this.dateArticle = dateArticle;
 		this.positionArticle = positionArticle;
@@ -83,7 +83,7 @@ public class ArticleEntitie {
 	//toString
 	@Override
 	public String toString() {
-		return "ArticleEntitie [idArticle=" + idArticle + ", titreArticle=" + titreArticle + ", dateArticle="
+		return "ArticleEntity [idArticle=" + idArticle + ", titreArticle=" + titreArticle + ", dateArticle="
 				+ dateArticle + ", NombreDeVueArticle=" + NombreDeVueArticle + ", positionArticle=" + positionArticle
 				+ ", visibiliteArticle=" + visibiliteArticle + "]";
 	}
